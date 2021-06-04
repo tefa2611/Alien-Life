@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*
+.container
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    background: #0c002e;
+}
+.container .card
+{
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background: #330867;
+}
+.container .card::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 20px solid transparent;
+    border-top: 20px solid #ff72b7;
+    border-right: 20px solid #ff72b7;
+}
+.container .card.active::before
+{
+    border-top: 20px solid #1fddeb;
+    border-right: 20px solid #1fddeb;
+}
+.container .card .icon
+{
+    margin-bottom: 10px;
+}
+.container .card .icon img
+{
+    max-width: 90px;
+}
+.container .card .content
+{
+    position: relative;
+    height: 215px;
+    overflow: hidden;
+}
+.container .card.active .content
+{
+    height: auto;
+}
+.container .card .content::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent,#330867);
+}
+.container .card.active .content::before
+{
+    display: none;
+}
+.container .card .content h3
+{
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.container .card .content p
+{
+    font-weight: 300;
+    color: #ccc;
+}
+.container .card .more
+{
+    position: relative;
+    padding: 10px 15px;
+    background: #ff72b7;
+    margin-top: 15px;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+.container .card.active .more
+{
+    background: #1fddeb;
+    color: white;
+}
+.container .card .more::before
+{
+    content:'Más Información';
+}
+.container .card.active .more::before
+{
+    content:'Menos Información';
+}
+.titulo h1
+{
+    text-align: center;
+    color: white;
+    background: #0c002e;
+    margin: auto;
+}
