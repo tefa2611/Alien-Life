@@ -122,3 +122,19 @@ section img#M
     font-size: 1.3em;
     color: white;
 }
+.sec .img1
+{
+    width: 400px;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.sec .img2
+{
+    width: 400px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
