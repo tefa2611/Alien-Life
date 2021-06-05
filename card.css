@@ -20,7 +20,7 @@
     width: 300px;
     padding: 20px;
     margin: 20px;
-    background: #330867;
+    background-image: url(./cards.jpg);
 }
 .container .card::before
 {
@@ -63,7 +63,6 @@
     left: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(transparent,#330867);
 }
 .container .card.active .content::before
 {
