@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0c002e;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #0c002e;
+}
+.contenedor
+{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+}
+.contenedor .contactInfo
+{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background-image: url(./pp.jpg);
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+}
+.contenedor .contactInfo h4
+{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+.contenedor .contactInfo ul.info
+{
+    position: relative;
+    margin: 20px 0;
+}
+.contenedor .contactInfo ul.info li
+{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+.contenedor .contactInfo ul.info li span:nth-child(1)
+{
+    width: 30px;
+    min-width: 30px;
+}
+.contenedor .contactInfo ul.info li span:nth-child(1) img
+{
+    max-width: 100%;
+    filter: invert(1);
+    opacity: 0.5;
+}
+.contenedor .contactInfo ul.info li span:nth-child(2)
+{
+    color: white;
+    margin-left: 10px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+.contenedor .contactInfo ul.info li:hover span:nth-child(1) img,
+.contenedor .contactInfo ul.info li:hover span:nth-child(2)
+{
+    opacity: 2;
+}
+.contenedor .contactInfo ul.sci
+{
+    position: relative;
+    display: flex;
+}
+.contenedor .contactInfo ul.sci li
+{
+    list-style: none;
+    margin-right: 15px;
+}
+.contenedor .contactInfo ul.sci a
+{
+    text-decoration: none;
+}
+.contenedor .contactInfo ul.sci a img
+{
+    filter: invert(1);
+}
+.contenedor .contactForm
+{
+    position: absolute;
+    padding: 70px 50px;
+    padding-left: 250px;
+    margin-left: 150px;
+    width: calc(100% - 150px);
+    height: 100%;
+    background: white;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+}
+.contenedor .contactForm h2
+{
+    color: #0c002e;
+    font-size: 24px;
+    font-weight: 500;
+}
+.contenedor .contactForm .formBox
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.contenedor .contactForm .formBox .inputBox
+{
+    position: relative;
+    margin-bottom: 35px;
+}
+.contenedor .contactForm .formBox .inputBox.w50
+{
+    width: 47%;
+}
+.contenedor .contactForm .formBox .inputBox.w100
+{
+    width: 100%;
+}
+.contenedor .contactForm .formBox .inputBox input,
+.contenedor .contactForm .formBox .inputBox textarea
+{
+    width: 100%;
+    resize: none;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #777;
+}
+.contenedor .contactForm .formBox .inputBox textarea
+{
+    height: 120px;
+}
+.contenedor .contactForm .formBox .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    pointer-events: none;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+.contenedor .contactForm .formBox .inputBox input:focus ~ span,
+.contenedor .contactForm .formBox .inputBox input:valid ~ span,
+.contenedor .contactForm .formBox .inputBox textarea:focus ~ span,
+.contenedor .contactForm .formBox .inputBox textarea:valid ~ span
+{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #0c002e;
+    font-weight: 500;
+}
+.contenedor .contactForm .formBox .inputBox input[type="submit"]
+{
+    position: relative;
+    cursor: pointer;
+    background: #0c002e;
+    color: white;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+}
+.contenedor .contactForm .formBox .inputBox input[type="submit"]:hover
+{
+    background: #2e1574;
+}
+.contenedor .contactForm .formBox .inputBox a
+{
+    margin-left: 390px;
+    position: relative;
+    cursor: pointer;
+    background: #1fddeb;
+    color: white;
+    max-width: 150px;
+    padding: 14.5px;
+    text-decoration: none;
+    border-radius: 2px;
+}
+.contenedor .contactForm .formBox .inputBox a:hover
+{
+    background: #07747c;
+}
+.contenedor .contactForm .formBox .inputBox li a
+{
+    position: relative;
+    cursor: pointer;
+    background: #0c002e;
+    color: white;
+    border: none;
+    max-width: 150px;
+    padding: 12px;  
+}
