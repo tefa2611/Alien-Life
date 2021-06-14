@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.cont
+{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 10000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titol
+{
+    color: white;
+    font-size:  30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.portafolio
+{
+    background: linear-gradient( #0c002e, #12043a, #24105c);
+}
+.galeria-port
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-port
+{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 175px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+.imagen-port > img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hover-galeria
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(252, 100%, 5%, 0.692);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria img
+{
+    width: 50px;
+}
+.hover-galeria p
+{
+    color: white;
+}
+.hover-galeria img
+{
+    filter: invert(1);
+}
+.imagen-port:hover .hover-galeria
+{
+    transform: scale(1);
+}

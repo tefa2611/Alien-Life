@@ -12,7 +12,7 @@ section
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #0c002e;
+    background: linear-gradient(#2b1055, #5424a1, #8b1bbe, #2f5bbe, #21629e);
 }
 section::before
 {
@@ -22,23 +22,25 @@ section::before
     left: 0;
     width: 50%;
     height: 100%;
-    background: #0c002e;
+    background: linear-gradient(#2b1055, #5424a1, #8b1bbe, #2f5bbe, #21629e);
 }
 .contenedor
 {
+    margin-top: 80px;
     position: relative;
     min-width: 1100px;
-    min-height: 550px;
+    min-height: 510px;
     display: flex;
     z-index: 1000;
 }
 .contenedor .contactInfo
 {
+    border-radius: 10px;
     position: absolute;
     top: 40px;
     width: 350px;
     height: calc(100% - 80px);
-    background-image: url(./pp.jpg);
+    background-image: url(./ccardss.jpg);
     z-index: 1;
     padding: 40px;
     display: flex;
@@ -110,6 +112,7 @@ section::before
 }
 .contenedor .contactForm
 {
+    border-radius: 20px;
     position: absolute;
     padding: 70px 50px;
     padding-left: 250px;
@@ -192,7 +195,7 @@ section::before
     cursor: pointer;
     background: #0c002e;
     color: white;
-    border: none;
+    border-radius: 200px;
     max-width: 150px;
     padding: 12px;
 }
@@ -200,29 +203,45 @@ section::before
 {
     background: #2e1574;
 }
-.contenedor .contactForm .formBox .inputBox a
+body
 {
-    margin-left: 390px;
-    position: relative;
-    cursor: pointer;
-    background: #1fddeb;
-    color: white;
-    max-width: 150px;
-    padding: 14.5px;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055, #5424a1, #8b1bbe, #2f5bbe, #21629e);
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
     text-decoration: none;
-    border-radius: 2px;
-}
-.contenedor .contactForm .formBox .inputBox a:hover
-{
-    background: #07747c;
-}
-.contenedor .contactForm .formBox .inputBox li a
-{
-    position: relative;
-    cursor: pointer;
-    background: #0c002e;
+    padding: 6px 15px;
     color: white;
-    border: none;
-    max-width: 150px;
-    padding: 12px;  
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background: white;
+    color: #2b1055;
 }
