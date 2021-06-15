@@ -51,27 +51,7 @@ body::-webkit-scrollbar-thumb:hover {
         <img  class="img1" src="./FOTOUNO.jpg" alt="Especie">
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint voluptas tempore, itaque recusandae unde molestiae nulla excepturi inventore nostrum omnis, quas adipisci sit quam consectetur doloribus dolorum ab ex laudantium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit beatae quae nulla laboriosam aliquam, facere reiciendis? Dolores modi animi cumque, deserunt quibusdam aut. Quisquam amet minima blanditiis dolorum. Dicta, eaque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque sint libero, beatae quae praesentium dolore repellat, facere perferendis dolor voluptatibus est eligendi, sapiente delectus et reiciendis enim? Consequuntur, tenetur laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptatibus facere quas, culpa quibusdam corrupti, similique placeat animi, excepturi molestias eveniet unde voluptas amet doloribus debitis consectetur ea beatae nostrum. <br><br>  <img class="img2" src="./FOTODOS.jpg" alt="Especie">imLorem ipsum dolor sit amet consectetur, adipisicing elit. Sint voluptas tempore, itaque recusandae unde molestiae nulla excepturi inventore nostrum omnis, quas adipisci sit quam consectetur doloribus dolorum ab ex laudantium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit beatae quae nulla laboriosam aliquam, facere reiciendis? Dolores modi animi cumque, deserunt quibusdam aut. Quisquam amet minima blanditiis dolorum. Dicta, eaque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque sint libero, beatae quae praesentium dolore repellat, facere perferendis dolor voluptatibus est eligendi, sapiente delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet asperiores, autem alias quas officia hic dicta, a excepturi delectus et rerum! Mollitia molestiae ducimus, minus dicta sed tempore amet quas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia necessitatibus voluptate vitae veritatis quas odit architecto officia debitis animi, dignissimos iste beatae ipsam dolore accusantium accusamus dicta assumenda? Ea, pariatur!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eveniet officia possimus illo ut dolores dicta libero deserunt sequi, in provident eligendi perspiciatis atque quasi dolorum accusantium debitis totam? Voluptates?</p>
     </div>
-    <script>
-        let puntos = document.getElementById('puntos');
-        let P = document.getElementById('P');
-        let M = document.getElementById('M');
-        let text = document.getElementById('text');
-        let btn = document.getElementById('btn');
-        let MMP = document.getElementById('MMP');
-        let header = document.querySelector('header');
-
-        window.addEventListener('scroll', function(){
-            let value = window.scrollY;
-            puntos.style.left = value * 0.25 + 'px';
-            P.style.top = value * 1.05 + 'px';
-            MMP.style.top = value * 0.5 + 'px';
-            M.style.top = value * 0 + 'px';
-            text.style.marginRight = value * 4 + 'px';
-            text.style.marginTop = value * 0.5 + 'px';
-            btn.style.marginTop = value * 1.5 + 'px';
-            header.style.top = value * 0.5 + 'px';
-        })
-    </script>
+    <script src="principal.js"></script>
 
 <div class="portafolio" id="portafolio">
     <div class="cont">
@@ -146,7 +126,7 @@ body::-webkit-scrollbar-thumb:hover {
         </div>
         <div class="content">
             <h3>Valentina Cruz</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem perferendis adipisci ea nostrum mollitia harum, officiis rem, in ad dolorem magni aperiam delectus unde expedita amet, molestiae perspiciatis beatae ipsa. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum harum dignissimos illo placeat perferendis</p>
+            <p>Hola. Mi nombre es Nallely Valentina Cruz Ortegón y soy una de las creadoras de esta página web. Pertenezco al colegio Las Margarita IED y estoy en el programa de Desarrollo Web de Bictia. Soy una persona creativa, comprensiva, honesta y juiciosa. Me apasiona el desarrollo web, creo que es un mundo lleno de curiosidades y procesos creativos que van de la mano con utilizades digitales. Este conocimiento lo he adquirido gracias a mi profesora Paola Cuadros y a mi profesor John Castiblanco.</p>
         </div>
         <a class="more"></a>
     </div>
@@ -157,19 +137,12 @@ body::-webkit-scrollbar-thumb:hover {
         </div>
         <div class="content">
             <h3>Estefanía García</h3>
-            <p>Hola. Mi nombre es Esefanía Quijano García y soy una de las creadoras de este proyecto. Soy estudiante de décimo de bachillerato y paricipo en el programa de Desarrollo Web de Bictia. Me encata todo esto de la programación, considero que es algo espectacular, te da la posibilidad de hacer cosas increible y de espandir tu imaginación.</p>
+            <p>Hola. Mi nombre es Esefanía Quijano García y soy una de las creadoras de este proyecto. Soy estudiante de décimo del colegio Las Margaritas y paricipo en el programa de Desarrollo Web de Bictia. Soy una persona responsable, dedicada, juiciosa, creativa e introvertida. Me encata todo esto de la programación, considero que es algo espectacular, te da la posibilidad de hacer cosas increibles y de espandir tu imaginación. Además, la programación se puede aplicar en muchas cosas.</p>
         </div>
         <a class="more"></a>
     </div>
 </div>
-<script>
-    let more = document.querySelectorAll('.more');
-    for (let i = 0; i<more.length; i++){
-        more[i].addEventListener('click', function(){
-            more[i].parentNode.classList.toggle('active')
-        })
-    }
-</script>
+<script src="card.js"></script>
 <div class="composicion comp" style="background: linear-gradient( #4a2c9c, #5736b1, #6c46d3);">
         <h2 class="titulo4">Composición de la Página</h2>
         <div class="composicion-content">
