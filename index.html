@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="LOGO PARA EL PROYECTO FINAL.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="com.css">
     <link rel="stylesheet" href="portafolio.css">
     <style>
 /* Estilos scrollbar */
@@ -28,7 +29,6 @@ body::-webkit-scrollbar-thumb:hover {
     </style>
 </head>
 <body>
-        </script>
     <header>
         <a href="#" class="logo"><img width="60px" src="./LOGO PARA EL PROYECTO FINAL.png" alt="LOGO"></a>
         <ul>
@@ -135,41 +135,90 @@ body::-webkit-scrollbar-thumb:hover {
             </div>
         </div>
     </div>
-
-    <div class="titulo">
-        <h1 id="SB">Sobre Nosotras</h1>
-    </div>
-    <div class="container">
-        <div class="card">
-            <div class="icon">
-                <img width="200px" src="./personita2.png" alt="personita">
-            </div>
-            <div class="content">
-                <h3>Valentina Cruz</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem perferendis adipisci ea nostrum mollitia harum, officiis rem, in ad dolorem magni aperiam delectus unde expedita amet, molestiae perspiciatis beatae ipsa. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum harum dignissimos illo placeat perferendis</p>
-            </div>
-            <a class="more"></a>
-        </div>
-
-        <div class="card">
-            <div class="icon">
-                <img width="230px" src="./personita2.png" alt="personita">
-            </div>
-            <div class="content">
-                <h3>Estefanía García</h3>
-                <p>Hola. Mi nombre es Esefanía Quijano García y soy una de las creadoras de este proyecto. Soy estudiante de décimo de bachillerato y paricipo en el programa de Desarrollo Web de Bictia. Me encata todo esto de la programación, considero que es algo espectacular, te da la posibilidad de hacer cosas increible y de espandir tu imaginación.</p>
-            </div>
-            <a class="more"></a>
-        </div>
-    </div>
-    <script>
-        let more = document.querySelectorAll('.more');
-        for (let i = 0; i<more.length; i++){
-            more[i].addEventListener('click', function(){
-                more[i].parentNode.classList.toggle('active')
-            })
-        }
-    </script>
 </div>
+<div class="titulo">
+    <h1 id="SB">Sobre Nosotras</h1>
+</div>
+<div class="container">
+    <div class="card">
+        <div class="icon">
+            <img width="200px" src="./personita2.png" alt="personita">
+        </div>
+        <div class="content">
+            <h3>Valentina Cruz</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem perferendis adipisci ea nostrum mollitia harum, officiis rem, in ad dolorem magni aperiam delectus unde expedita amet, molestiae perspiciatis beatae ipsa. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum harum dignissimos illo placeat perferendis</p>
+        </div>
+        <a class="more"></a>
+    </div>
+
+    <div class="card">
+        <div class="icon">
+            <img width="230px" src="./personita2.png" alt="personita">
+        </div>
+        <div class="content">
+            <h3>Estefanía García</h3>
+            <p>Hola. Mi nombre es Esefanía Quijano García y soy una de las creadoras de este proyecto. Soy estudiante de décimo de bachillerato y paricipo en el programa de Desarrollo Web de Bictia. Me encata todo esto de la programación, considero que es algo espectacular, te da la posibilidad de hacer cosas increible y de espandir tu imaginación.</p>
+        </div>
+        <a class="more"></a>
+    </div>
+</div>
+<script>
+    let more = document.querySelectorAll('.more');
+    for (let i = 0; i<more.length; i++){
+        more[i].addEventListener('click', function(){
+            more[i].parentNode.classList.toggle('active')
+        })
+    }
+</script>
+<div class="composicion comp" style="background: linear-gradient( #4a2c9c, #5736b1, #6c46d3);">
+        <h2 class="titulo4">Composición de la Página</h2>
+        <div class="composicion-content">
+            <div class="column left">
+                <div class="text">Los tipos de lenguaje que maneja la página.</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem labore hic odio quos laudantium odit, totam nulla. Aut, nihil libero cumque debitis vel porro accusamus neque aspernatur aperiam temporibus illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque neque obcaecati excepturi tempore, sint laudantium quasi, debitis amet nemo perspiciatis veniam architecto numquam voluptas ipsum quibusdam? Illum vel suscipit culpa.</p>
+            </div>
+            <div class="column right">
+                <div class="bars">
+                    <div class="info">
+                        <span>HTML</span>
+                        <span>52.5%</span>
+                    </div>
+                    <div class="line html"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>CSS</span>
+                        <span>47.5%</span>
+                    </div>
+                    <div class="line CSS"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>JavaScript</span>
+                        <span>20%</span>
+                    </div>
+                    <div class="line JS"></div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<footer id="cuenta">
+    <div class="contenedor footer-content">
+        <div class="logo">
+            <img class="brand" src="./LOGO PARA EL PROYECTO FINAL.png" alt="">
+            <p>Alien Life</p>
+        </div>
+        <div class="cuentausu">
+            <a href="#">
+                <svg><rect></rect></svg> 
+                Registrate</a>
+            <a href="#">
+                <svg><rect></rect></svg>
+                Ingresa a tu cuenta</a>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
